@@ -1,0 +1,192 @@
+body{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .pagecontent{
+    width: 100%;
+  }
+  
+  .mainbackground{
+    background-image: url('./img/animated-orb.gif');
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .mainbackgroundbase{
+    background-color: rgba(0,0,0,0.5);
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  
+  .clickables{
+    line-height: 100px;
+    width: 33.33%;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+  }
+  
+  .clickables div{
+    height: 100%;
+  }
+  
+  .clickables span{
+    margin: 0 auto;
+    height: 100%;
+    font-size: 40px;
+    color: white;
+  }
+  
+  a:hover{
+    background-color: rgba(255,255,255,0.5)
+  }
+  
+  a:visited{
+    color:black;
+  }
+  
+  .greeting{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+  }
+  
+  .introtext{
+    color: rgba(0,0,0,0.5);
+    width: 95%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80px;
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(200,200,200,0.5);
+  }
+  
+  .project-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .project-container span{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5)
+  }
+  
+  .articles{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    width: 95%;
+    border-bottom: 1px solid rgba(200,200,200,0.5);
+  }
+  
+  .cards{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 40%;
+    color: rgba(100,100,100,0.5);
+  }
+  
+  .cards h2{
+    color: rgba(0,0,0,0.5);
+    font-weight: bold;
+  }
+  .cards a{
+    text-decoration: none;
+  }
+  
+  .cards a:link{
+    color: black;
+    font-weight: bold;
+  }
+  
+  .smallarrow{
+    font-size: 10px;
+  }
+  
+  .imgcard{
+    max-height:100%;
+    width: 100%;
+    text-align: left;
+    border-radius: 25px
+  }
+  
+  .buttonGo{
+    text-align: center;
+    height:20px;
+  
+    min-width: 200px;
+    border-radius: 25px;
+    background-color: rgba(200,200,200,0.5);
+  }
+  
+  .credit{
+    width: 40%;
+    margin-top: 50px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(200,200,200,0.5);
+    text-align: center;
+  }
+  
+  .connectCard{
+    background-color: rgba(200,200,200,0.5);
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  @media (max-width:600px){
+    .clickables span{
+      margin: 0 auto;
+      height: 100%;
+      font-size: 20px;
+      color: white;
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      width: 90%;
+      color: rgba(100,100,100,0.5)
+    }
+    .credit{
+      width: 80%;
+      margin-top: 200px ;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(200,200,200,0.5);
+      text-align: center;
+    }
+  }
